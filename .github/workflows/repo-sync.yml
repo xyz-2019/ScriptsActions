@@ -19,7 +19,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync sazs34-scripts
+      - name: sync lxk0301-scripts
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
