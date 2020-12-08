@@ -40,6 +40,7 @@ jobs:
           npm install
       - name: '运行 【京喜农场】'
         run: | 
+          cd ~/scripts
           node jx_nc.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
