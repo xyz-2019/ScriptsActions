@@ -1,5 +1,5 @@
 
-name: 脚本名称
+name: yml范例
 
 on:
   workflow_dispatch:
