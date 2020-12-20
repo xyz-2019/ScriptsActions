@@ -18,8 +18,10 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - name: Checkout
-        run: |
-          git clone https://gitee.com/lxk0301/jd_scripts.git ~/scripts
+        uses: actions/checkout@v2
+        with:
+          repository: 'lxk0301/jd_scripts'
+          ref: 'master'
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -33,7 +35,6 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: '运行 【京东取关商品】'
         run: |
-          cd  ~/scripts
           npm install
           node jd_unsubscribe.js
         env:
