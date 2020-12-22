@@ -1,0 +1,34 @@
+
+name: 互助码自动上车
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1,10,20 * *'
+  # watch:
+  #   types: started
+  repository_dispatch:
+    types: create_sharecodes
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: 'lin-xh/ScriptsActions'
+          ref: 'main'
+      - name: 提交互助码
+        run: |
+          cd ~/.github
+          chmod +x create_sharecodes.sh
+          ./create_sharecodes.sh
+        env:
+          ShareCodesJDZZ: ${{ secrets.ShareCodesJDZZ: }}
+          ShareCodesDdfactory: ${{ secrets.ShareCodesDdfactory }}
+          ShareCodesJxfactory: ${{ secrets.ShareCodesJxfactory }}
+          ShareCodesBean: ${{ secrets.ShareCodesBean }}
+          ShareCodesFarm: ${{ secrets.ShareCodesFarm }}
+          ShareCodesPet: ${{ secrets.ShareCodesPet }}
+          SCKEY: ${{ secrets.SCKEY }}
