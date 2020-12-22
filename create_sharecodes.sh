@@ -3,9 +3,9 @@
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 export LC_ALL=C
 
-RootDir=$(cd $(dirname $0); cd ..; pwd)
+RootDir=$(cd $(dirname $0); pwd)
 LogDir=${RootDir}/log
-LogFile=${LogDir}/create_share_codes/create_share_codes.log
+LogFile=${LogDir}/create_share_codes.log
 CreateURLJDZZ="https://code.chiang.fun/api/v1/jd/jdzz/create/"
 CreateURLDdfactory="http://api.turinglabs.net/api/v1/jd/ddfactory/create/"
 CreateURLJxfactory="http://api.turinglabs.net/api/v1/jd/jxfactory/create/"
@@ -15,10 +15,10 @@ CreateURLPet="http://api.turinglabs.net/api/v1/jd/pet/create/"
 URLServerChan="https://sc.ftqq.com/"
 
 ## 删除旧的日志，创建新的日志
-if [ ! -d ${LogDir}/create_share_codes ]; then
-  mkdir -p ${LogDir}/create_share_codes
+if [ ! -d ${LogDir} ]; then
+  mkdir -p ${LogDir}
 fi
-cd ${LogDir}/create_share_codes/
+cd ${LogDir}/
 rm -f ${LogFile}
 touch ${LogFile}
 
