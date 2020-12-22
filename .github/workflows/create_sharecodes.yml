@@ -1,3 +1,10 @@
+## Settings中添加如下Scerets，每个互助码间使用换行来分开
+## SHARECODES_JDZZ 京东赚赚互助码
+## SHARECODES_DDFACTORY 东东工厂互助码
+## SHARECODES_JXFACTORY  京喜工厂互助码
+## SHARECODES_BEAN  种豆得豆互助码
+## SHARECODES_FARM  京东农场互助码
+## SHARECODES_PET  京东萌宠互助码
 
 name: 互助码自动上车
 
