@@ -6,32 +6,32 @@ export LC_ALL=C
 
 ## 按以下格式修改为自己的京东赚赚互助码，每个互助码间使用换行来分开，首尾一对引号
 ## 如不需要提交此互助码，删除互助码即可
-ShareCodesJDZZ=""
+## ShareCodesJDZZ=""
 
 ## 按以下格式修改为自己的东东工厂互助码，每个互助码间使用换行来分开，首尾一对引号
 ## 如不需要提交此互助码，删除互助码即可
-ShareCodesDdfactory=""
+## ShareCodesDdfactory=""
 
 ## 按以下格式修改为自己的京喜工厂互助码，每个互助码间使用换行来分开，首尾一对引号
 ## 如不需要提交此互助码，删除互助码即可
-ShareCodesJxfactory=""
+## ShareCodesJxfactory=""
 
 ## 按以下格式修改为自己的种豆得豆互助码，每个互助码间使用换行来分开，首尾一对引号
 ## 如不需要提交此互助码，删除互助码即可
-ShareCodesBean=""
+## ShareCodesBean=""
 
 ## 按以下格式修改为自己的东东农场互助码，每个互助码间使用换行来分开，首尾一对引号
 ## 如不需要提交此互助码，删除互助码即可
-ShareCodesFarm=""
+## ShareCodesFarm=""
 
 ## 按以下格式修改为自己的东东萌宠互助码，每个互助码间使用换行来分开，首尾一对引号
 ## 如不需要提交此互助码，删除互助码即可
-ShareCodesPet=""
+## ShareCodesPet=""
 
 ## 如果你希望在向服务器提交互助码后反馈提交结果，请补充ServerChan的SCKEY
 ## 教程：http://sc.ftqq.com/3.version
 ## 我懒，只做了ServerChan的通知渠道，其他不想做
-SCKEY=""
+## SCKEY=""
 
 
 ################################## 以下勿动 ##################################
