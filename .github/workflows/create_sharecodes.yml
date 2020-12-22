@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: 'lin-xh/ScriptsActions'
+          repository: ${{ github.repository }}
           ref: 'main'
       - name: 提交互助码
         run: |
