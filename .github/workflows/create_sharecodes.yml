@@ -31,4 +31,4 @@ jobs:
           ShareCodesBean: ${{ secrets.ShareCodesBean }}
           ShareCodesFarm: ${{ secrets.ShareCodesFarm }}
           ShareCodesPet: ${{ secrets.ShareCodesPet }}
-          SCKEY: ${{ secrets.SCKEY }}
+          SCKEY: ${{ secrets.PUSH_KEY }}
