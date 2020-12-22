@@ -25,7 +25,7 @@ jobs:
           chmod +x create_sharecodes.sh
           ./create_sharecodes.sh
         env:
-          ShareCodesJDZZ: ${{ secrets.ShareCodesJDZZ: }}
+          ShareCodesJDZZ: ${{ secrets.ShareCodesJDZZ }}
           ShareCodesDdfactory: ${{ secrets.ShareCodesDdfactory }}
           ShareCodesJxfactory: ${{ secrets.ShareCodesJxfactory }}
           ShareCodesBean: ${{ secrets.ShareCodesBean }}
