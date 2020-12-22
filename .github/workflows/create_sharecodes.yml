@@ -21,7 +21,6 @@ jobs:
           ref: 'main'
       - name: 提交互助码
         run: |
-          cd /.github
           chmod +x create_sharecodes.sh
           ./create_sharecodes.sh
         env:
