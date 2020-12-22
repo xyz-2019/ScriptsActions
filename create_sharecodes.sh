@@ -3,22 +3,6 @@
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 export LC_ALL=C
 
-
-## 添加如下Scerets，每个互助码间使用换行来分开
-## SHARECODES_JDZZ 京东赚赚互助码
-## SHARECODES_DDFACTORY 东东工厂互助码
-## SHARECODES_JXFACTORY  京喜工厂互助码
-## SHARECODES_BEAN  种豆得豆互助码
-## SHARECODES_FARM  京东农场互助码
-## SHARECODES_PET  京东萌宠互助码
-
-## 如果你希望在向服务器提交互助码后反馈提交结果，请补充ServerChan的SCKEY
-## 教程：http://sc.ftqq.com/3.version
-## SCKEY  推送码
-
-
-################################## 以下勿动 ##################################
-## 路径
 ShellDir=$(cd $(dirname $0); pwd)
 RootDir=$(cd $(dirname $0); cd ..; pwd)
 ScriptsDir=${RootDir}/scripts
