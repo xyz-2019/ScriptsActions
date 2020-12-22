@@ -4,34 +4,17 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 export LC_ALL=C
 
 
-## 按以下格式修改为自己的京东赚赚互助码，每个互助码间使用换行来分开，首尾一对引号
-## 如不需要提交此互助码，删除互助码即可
-## ShareCodesJDZZ=""
-
-## 按以下格式修改为自己的东东工厂互助码，每个互助码间使用换行来分开，首尾一对引号
-## 如不需要提交此互助码，删除互助码即可
-## ShareCodesDdfactory=""
-
-## 按以下格式修改为自己的京喜工厂互助码，每个互助码间使用换行来分开，首尾一对引号
-## 如不需要提交此互助码，删除互助码即可
-## ShareCodesJxfactory=""
-
-## 按以下格式修改为自己的种豆得豆互助码，每个互助码间使用换行来分开，首尾一对引号
-## 如不需要提交此互助码，删除互助码即可
-## ShareCodesBean=""
-
-## 按以下格式修改为自己的东东农场互助码，每个互助码间使用换行来分开，首尾一对引号
-## 如不需要提交此互助码，删除互助码即可
-## ShareCodesFarm=""
-
-## 按以下格式修改为自己的东东萌宠互助码，每个互助码间使用换行来分开，首尾一对引号
-## 如不需要提交此互助码，删除互助码即可
-## ShareCodesPet=""
+## 添加如下Scerets，每个互助码间使用换行来分开
+## SHARECODES_JDZZ 京东赚赚互助码
+## SHARECODES_DDFACTORY 东东工厂互助码
+## SHARECODES_JXFACTORY  京喜工厂互助码
+## SHARECODES_BEAN  种豆得豆互助码
+## SHARECODES_FARM  京东农场互助码
+## SHARECODES_PET  京东萌宠互助码
 
 ## 如果你希望在向服务器提交互助码后反馈提交结果，请补充ServerChan的SCKEY
 ## 教程：http://sc.ftqq.com/3.version
-## 我懒，只做了ServerChan的通知渠道，其他不想做
-## SCKEY=""
+## SCKEY  推送码
 
 
 ################################## 以下勿动 ##################################
