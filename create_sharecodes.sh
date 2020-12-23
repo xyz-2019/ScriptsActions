@@ -24,14 +24,14 @@ touch ${LogFile}
 
 ## 提交京东赚赚互助码
 CreateCodesJDZZ() {
-  echo -e "京东赚赚：\n\n" >> ${LogFile}
+  echo "京东赚赚：\n\n" >> ${LogFile}
   for Code in ${ShareCodesJDZZ}
   do
     sleep 10
     wget -q -O ${Code} ${CreateURLJDZZ}${Code}
     echo -n "${Code}: " >> ${LogFile}
     cat ${Code} >> ${LogFile}
-    echo -e "\n\n" >> ${LogFile}
+    echo "\n\n" >> ${LogFile}
     rm -f ${Code}
   done
   echo -e "\n\n" >> ${LogFile}
@@ -39,14 +39,14 @@ CreateCodesJDZZ() {
 
 ## 提交东东工厂互助码
 CreateCodesDdfactory() {
-  echo -e "东东工厂：\n\n" >> ${LogFile}
+  echo "东东工厂：\n\n" >> ${LogFile}
   for Code in ${ShareCodesDdfactory}
   do
     sleep 10
     wget -q -O ${Code} ${CreateURLDdfactory}${Code}
     echo -n "${Code}: " >> ${LogFile}
     cat ${Code} >> ${LogFile}
-    echo -e "\n\n" >> ${LogFile}
+    echo "\n\n" >> ${LogFile}
     rm -f ${Code}
   done
   echo -e "\n\n" >> ${LogFile}
@@ -54,14 +54,14 @@ CreateCodesDdfactory() {
 
 ## 提交京喜工厂互助码
 CreateCodesJxfactory() {
-  echo -e "京喜工厂：\n\n" >> ${LogFile}
+  echo "京喜工厂：\n\n" >> ${LogFile}
   for Code in ${ShareCodesJxfactory}
   do
     sleep 10
     wget -q -O ${Code} ${CreateURLJxfactory}${Code}
     echo -n "${Code}: " >> ${LogFile}
     cat ${Code} >> ${LogFile}
-    echo -e "\n\n" >> ${LogFile}
+    echo "\n\n" >> ${LogFile}
     rm -f ${Code}
   done
   echo -e "\n\n" >> ${LogFile}
@@ -69,14 +69,14 @@ CreateCodesJxfactory() {
 
 ## 提交种豆得豆互助码
 CreateCodesBean() {
-  echo -e "种豆得豆：\n\n" >> ${LogFile}
+  echo "种豆得豆：\n\n" >> ${LogFile}
   for Code in ${ShareCodesBean}
   do
     sleep 10
     wget -q -O ${Code} ${CreateURLBean}${Code}
     echo -n "${Code}: " >> ${LogFile}
     cat ${Code} >> ${LogFile}
-    echo -e "\n\n" >> ${LogFile}
+    echo "\n\n" >> ${LogFile}
     rm -f ${Code}
   done
   echo -e "\n\n" >> ${LogFile}
@@ -84,14 +84,14 @@ CreateCodesBean() {
 
 ## 提交东东农场互助码
 CreateCodesFarm() {
-  echo -e "东东农场：\n\n" >> ${LogFile}
+  echo "东东农场：\n\n" >> ${LogFile}
   for Code in ${ShareCodesFarm}
   do
     sleep 10
     wget -q -O ${Code} ${CreateURLFarm}${Code}
     echo -n "${Code}: " >> ${LogFile}
     cat ${Code} >> ${LogFile}
-    echo -e "\n\n" >> ${LogFile}
+    echo "\n\n" >> ${LogFile}
     rm -f ${Code}
   done
   echo -e "\n\n" >> ${LogFile}
