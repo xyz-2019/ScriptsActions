@@ -99,7 +99,7 @@ CreateCodesFarm() {
 
 ## 提交东东萌宠互助码
 CreateCodesPet() {
-  echo -e "东东萌宠：\n\n" >> ${LogFile}
+  echo "东东萌宠：\n\n" >> ${LogFile}
   for Code in ${ShareCodesPet}
   do
     sleep 10
@@ -109,7 +109,7 @@ CreateCodesPet() {
     echo -e "\n\n" >> ${LogFile}
     rm -f ${Code}
   done
-  echo -e "\n\n" >> ${LogFile}
+  echo "\n\n" >> ${LogFile}
 }
 
 ## 向服务器提交互助码
