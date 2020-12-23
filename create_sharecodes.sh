@@ -3,7 +3,7 @@
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 export LC_ALL=C
 
-RootDir=$(cd $(dirname $0); cd ..; pwd)
+RootDir=$(cd $(dirname $0); pwd)
 LogDir=${RootDir}/log
 LogFile=${LogDir}/create_share_codes.log
 CreateURLJDZZ="https://code.chiang.fun/api/v1/jd/jdzz/create/"
