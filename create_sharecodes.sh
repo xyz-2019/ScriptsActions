@@ -106,10 +106,10 @@ CreateCodesPet() {
     wget -q -O ${Code} ${CreateURLPet}${Code}
     echo -n "${Code}: " >> ${LogFile}
     cat ${Code} >> ${LogFile}
-    echo -e "\n\n" >> ${LogFile}
+    echo "\n\n" >> ${LogFile}
     rm -f ${Code}
   done
-  echo "\n\n" >> ${LogFile}
+  echo -e "\n\n" >> ${LogFile}
 }
 
 ## 向服务器提交互助码
