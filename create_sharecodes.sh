@@ -23,7 +23,7 @@ rm -f ${LogFile}
 touch ${LogFile}
 
 ## 提交京东赚赚互助码
-function CreateCodesJDZZ {
+CreateCodesJDZZ() {
   echo -e "京东赚赚：\n\n" >> ${LogFile}
   for Code in ${ShareCodesJDZZ}
   do
@@ -38,7 +38,7 @@ function CreateCodesJDZZ {
 }
 
 ## 提交东东工厂互助码
-function CreateCodesDdfactory {
+CreateCodesDdfactory() {
   echo -e "东东工厂：\n\n" >> ${LogFile}
   for Code in ${ShareCodesDdfactory}
   do
@@ -53,7 +53,7 @@ function CreateCodesDdfactory {
 }
 
 ## 提交京喜工厂互助码
-function CreateCodesJxfactory {
+CreateCodesJxfactory() {
   echo -e "京喜工厂：\n\n" >> ${LogFile}
   for Code in ${ShareCodesJxfactory}
   do
@@ -68,7 +68,7 @@ function CreateCodesJxfactory {
 }
 
 ## 提交种豆得豆互助码
-function CreateCodesBean {
+CreateCodesBean() {
   echo -e "种豆得豆：\n\n" >> ${LogFile}
   for Code in ${ShareCodesBean}
   do
@@ -83,7 +83,7 @@ function CreateCodesBean {
 }
 
 ## 提交东东农场互助码
-function CreateCodesFarm {
+CreateCodesFarm() {
   echo -e "东东农场：\n\n" >> ${LogFile}
   for Code in ${ShareCodesFarm}
   do
@@ -98,7 +98,7 @@ function CreateCodesFarm {
 }
 
 ## 提交东东萌宠互助码
-function CreateCodesPet {
+CreateCodesPet() {
   echo -e "东东萌宠：\n\n" >> ${LogFile}
   for Code in ${ShareCodesPet}
   do
