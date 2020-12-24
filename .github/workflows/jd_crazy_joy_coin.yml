@@ -1,5 +1,5 @@
 
-name: crazyJoy挂机
+name: 疯狂的Joy挂机
 
 on:
   workflow_dispatch:
@@ -26,7 +26,7 @@ jobs:
           node-version: '12'
       - name: install npm
         run: npm install
-      - name: '运行 【crazyJoy挂机】'
+      - name: '运行 【疯狂的Joy挂机】'
         run: |
              node jd_crazy_joy_coin.js
         env:
