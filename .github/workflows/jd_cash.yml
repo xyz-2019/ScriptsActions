@@ -4,7 +4,7 @@ name: 签到领现金
 on:
   workflow_dispatch:
   schedule:
-    - cron: '8 16 * * *'
+    - cron: '17 17 * * *'
   # watch:
   #   types: started
   repository_dispatch:
