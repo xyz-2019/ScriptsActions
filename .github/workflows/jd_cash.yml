@@ -35,3 +35,4 @@ jobs:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          JD_CASH_SHARECODES: ${{ secrets.JD_CASH_SHARECODES }}
