@@ -28,7 +28,7 @@ jobs:
         run: npm install
       - name: '运行 【宠汪汪喂食】'
         run: |
-             wget https://raw.githubusercontent.com/lin-xh/ScriptsActions/master/jdCookie.js -O jdCookie.js
+             wget https://raw.githubusercontent.com/lin-xh/ScriptsActions/main/others/jdCookie.js -O jdCookie.js
              node jd_joy_feedPets.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
