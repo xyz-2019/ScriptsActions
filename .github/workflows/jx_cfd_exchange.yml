@@ -20,10 +20,10 @@ jobs:
       - name: Checkout
         run: |
           wget -P ~/scripts https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfd_exchange.js
-          wget -P ~/scripts https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdJxncTokens.js
-          wget -P ~/scripts https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdCookie.js
-          wget -P ~/scripts https://raw.githubusercontent.com/lxk0301/jd_scripts/master/sendNotify.js
-          wget -P ~/scripts https://raw.githubusercontent.com/lxk0301/jd_scripts/master/package.json
+          wget -P ~/scripts https://raw.githubusercontent.com/lin-xh/ScriptsActions/master/jdJxncTokens.js
+          wget -P ~/scripts https://raw.githubusercontent.com/lin-xh/ScriptsActions/master/jdCookie.js
+          wget -P ~/scripts https://raw.githubusercontent.com/lin-xh/ScriptsActions/master/sendNotify.js
+          wget -P ~/scripts https://raw.githubusercontent.com/lin-xh/ScriptsActions/master/package.json
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
