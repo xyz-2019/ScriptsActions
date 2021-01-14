@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: ${{ github.repository }}
-          ref: 'master'
+          ref: 'gitee'
       - name: Setup node
         uses: actions/setup-node@v1
         with:
@@ -28,6 +28,7 @@ jobs:
         run: npm install
       - name: '运行 【脚本名称】'
         run: |
+             wget https://raw.githubusercontent.com/lin-xh/ScriptsActions/master/jdCookie.js -O jdCookie.js
              node js_name.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
