@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          wget -P ~/scripts https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfd_exchange.js
+          wget -P ~/scripts https://raw.githubusercontent.com/lin-xh/ScriptsActions/main/others/jx_cfd_exchange.js
           wget -P ~/scripts https://raw.githubusercontent.com/lin-xh/ScriptsActions/master/jdJxncTokens.js
           wget -P ~/scripts https://raw.githubusercontent.com/lin-xh/ScriptsActions/master/jdCookie.js
           wget -P ~/scripts https://raw.githubusercontent.com/lin-xh/ScriptsActions/master/sendNotify.js
