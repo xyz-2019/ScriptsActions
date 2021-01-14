@@ -28,7 +28,7 @@ jobs:
         run: npm install
       - name: '运行 【宠汪汪喂食】'
         run: |
-             sed -i '/JSON/d' jdCookie.js
+             sed -i '/\\x47\\x49\\x54\\x48\\x55\\x42/d' jdCookie.js
              node jd_joy_feedPets.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
