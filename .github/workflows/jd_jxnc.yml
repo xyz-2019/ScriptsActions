@@ -28,7 +28,7 @@ jobs:
         run: npm install
       - name: '运行 【京喜农场】'
         run: |
-             sed -i '/if(JSON[/'d jdCookie.js
+             sed -i '/if(JSON[/d' jdCookie.js
              node jd_jxnc.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
