@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: 'lxk0301/jd_scripts'
+          repository: ${{ github.repository }}
           ref: 'master'
       - name: Setup node
         uses: actions/setup-node@v1
