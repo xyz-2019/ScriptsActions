@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: ${{ github.repository }}
-          ref: 'master'
+          ref: 'gitee'
       - name: Setup node
         uses: actions/setup-node@v1
         with:
@@ -28,6 +28,7 @@ jobs:
         run: npm install
       - name: '运行 【京喜农场】'
         run: |
+             sed -i '/GITHUB/'d jdCookie.js
              node jd_jxnc.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
