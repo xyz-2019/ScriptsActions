@@ -2,10 +2,12 @@
 name: 修改jdCookie.js
 on:
   workflow_dispatch:
-  pull_request:
   push:
     branches:
-      - "gitee"
+      - gitee
+  pull_request:
+    branches:
+      - gitee
 jobs:
   fix-jdCookie:
     env:
