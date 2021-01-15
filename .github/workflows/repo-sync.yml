@@ -24,6 +24,7 @@ jobs:
           destination_branch: "gitee"
           github_token: ${{ secrets.PAT }}        
   fix-jdCookie:
+    needs: repo-sync
     env:
       PAT: ${{ secrets.PAT }}      
     runs-on: ubuntu-latest
