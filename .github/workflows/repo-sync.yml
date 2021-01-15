@@ -21,7 +21,7 @@ jobs:
         with:
           source_repo: "https://gitee.com/lxk0301/jd_scripts.git"
           source_branch: "master"
-          destination_branch: "gitee"
+          destination_branch: "master"
           github_token: ${{ secrets.PAT }}        
   fix-jdCookie:
     needs: repo-sync
@@ -31,12 +31,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: gitee
+        ref: master
     - name: '运行 【修改jdCookie】'
       run: |
              sed -i '/\\x47\\x49\\x54\\x48\\x55\\x42/d' jdCookie.js
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Apply fix-jdCookie changes
-        branch: gitee
+        branch: master
         file_pattern: jdCookie.js
