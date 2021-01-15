@@ -142,10 +142,10 @@ $.info = {};
       );
 
       //出岛寻宝大作战
-      await $.wait(500);
-      await submitGroupId();
-      await $.wait(500);
-      await joinGroup();
+      //await $.wait(500);
+      //await submitGroupId();
+      //await $.wait(500);
+      //await joinGroup();
       //提交邀请码
       await $.wait(500);
       await submitInviteId($.userName);
