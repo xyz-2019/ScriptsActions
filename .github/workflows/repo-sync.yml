@@ -1,24 +1,20 @@
-# File: .github/workflows/repo-sync.yml
+
 name: 同步lxk0301/jd_scripts
 on:
   schedule:
     - cron: '0 */6 * * *'
   workflow_dispatch:
-  watch:
-    types: started
-  repository_dispatch:
-    types: sync-lxk0301-scripts
+  
 jobs:
   repo-sync:
     env:
-      PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
+      PAT: ${{ secrets.PAT }} 
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
-
       - name: sync lxk0301-scripts
         uses: repo-sync/github-sync@v2
         if: env.PAT
@@ -26,4 +22,20 @@ jobs:
           source_repo: "https://gitee.com/lxk0301/jd_scripts.git"
           source_branch: "master"
           destination_branch: "gitee"
-          github_token: ${{ secrets.PAT }}
+          github_token: ${{ secrets.PAT }}        
+  fix-jdCookie:
+    env:
+      PAT: ${{ secrets.PAT }}      
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: gitee
+    - name: '运行 【修改jdCookie】'
+      run: |
+             sed -i '/\\x47\\x49\\x54\\x48\\x55\\x42/d' jdCookie.js
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Apply fix-jdCookie changes
+        branch: gitee
+        file_pattern: jdCookie.js
